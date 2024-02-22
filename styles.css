@@ -11,3 +11,26 @@ canvas {
   width: 100%;
   height: 100%;
 }
+
+#sphereInfo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 50px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+  border-radius: 8px; /* Slightly round the corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Apply a soft shadow */
+  display: none; /* Initially hidden */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333; /* Dark text color */
+  max-width: 200px;
+  z-index: 1000; /* Ensure the info box is displayed above other elements */
+}
